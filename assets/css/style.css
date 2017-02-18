@@ -1,3 +1,4 @@
+/* CSS for multiple pages and for index.html */
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-image: url('../images/new_year_background/new_year_background.png'); /* I can't figure out why
@@ -20,6 +21,25 @@ header {
 	margin: 0 auto;
 }
 
+#nameBlock {
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	float: left;
+	padding: 27.5px;
+	font-size: 35px;
+	margin-top: 1px;
+}
+
+#navigation1 {
+	float: right;
+	padding: 36px 0 36px 0;
+	color: #777777;
+	font-size: 18px;
+	margin-top: 1px;
+	color: #cccccc;
+}
+
 a {
 	color: #777777;
 }
@@ -40,6 +60,22 @@ a:hover {
 	color: #4aaaa5;
 }
 
+#about {
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 0 1px 0 0;
+	padding-right: 15px;
+	margin-right:10px;
+}
+
+#portfolio {
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 0 1px 0 0;
+	padding-right: 15px;
+	margin-right: 10px;
+}
+
 .heading {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
@@ -47,8 +83,27 @@ a:hover {
 .grayText {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 150%;
+}
+
+#bodyComponents {
+	clear: both;
+	width: 960px;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+#aboutMe {
+	width: 593px;
+	overflow: auto;
+	float: left;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	background-color: #ffffff;
+	padding: 27.5px;
+	margin-bottom: 150px;
 }
 
 #tealText1 {
@@ -62,6 +117,26 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+#profilePic {
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-top: 8px;
+	margin-right: 27.5px;
+}
+
+#connectWithMe {
+	float: right;
+	overflow: auto;
+	padding: 27.5px;
+	width: 213px;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
 #tealText2 {
 	color: #4aaaa5;
 	font-size: 25px;
@@ -70,57 +145,11 @@ a:hover {
 	border-style: solid;
 	border-color: #cccccc;
 	border-width: 0 0 1px 0;
-	margin-bottom: 20px;
-}
-
-#nameBlock {
-	text-align: center;
-	color: #ffffff;
-	background-color: #4aaaa5;
-	float: left;
-	padding: 27.5px;
-	font-size: 35px;
-	margin-top: 1px;
-}
-
-#navigation1 {
-	float: right;
-	padding: 36px 0 36px 0;
-	color: #777777;
-	font-size: 18px;
-	margin-top: 1px;
-	color: #cccccc;
-}
-
-#bodyComponents {
-	clear: both;
-	width: 960px;
 	margin: 0 auto;
 }
 
-
-#aboutMe {
-	width: 594px;
-	overflow: auto;
-	float: left;
-	border-style: solid;
-	border-color: #cccccc;
-	border-width: 1px;
-	background-color: #ffffff;
-	padding: 27.5px;
-}
-
-#connectWithMe {
-	float: right;
-	overflow: auto;
-	border-style: solid;
-	border-color: #cccccc;
-	border-width: 1px;
-	background-color: #ffffff;
-	padding: 20px 27.5px 27.5px 27.5px;
-}
-
 .icon {
+	margin-top: 20px;
 	height: 55px;
 	width: 55px;
 }
@@ -141,22 +170,10 @@ a:hover {
 	eyeballing)? */
 }
 
-#profilePic {
-	height: 200px;
-	width: 200px;
-	float: left;
-	margin-top: 8px;
-	margin-right: 27.5px;
-}
-
-.paragraph {
-	float: left;
-	padding-top: 0;
-}
-
 footer {
 	clear: both;
 	background-color: #666666;
+	width: 100%;
 	padding: 36px;
 	text-align: center;
 	font-size: 12px;
@@ -164,7 +181,103 @@ footer {
 	border-style: solid;
 	border-color: #4aaaa5;
 	border-width: 9px 0 0 0;
-	bottom: 0px;
-	position: absolute;
-	width: 100%;
+	position: fixed;
+	bottom: 0;
+} /*I tried all sorts of different things to get the footer to stick to the bottom and also not block text if the view port is small.
+But I wasn't able to figure that out. At least it is sticking to the bottom! I'd like to figure out how to also make it not block other
+material when the viewport is smaller.*/
+
+/* CSS for portfolio.html*/
+
+.portfolioImage {
+	width: 270px;
+	height: 180px;
 }
+
+#image1 {
+	float: left;
+	width: 270px;
+	height: 180px;
+	margin-bottom: 54px;
+	position: relative;
+}
+
+#image2 {
+	float: right;
+	width: 270px;
+	height: 180px;
+	margin-bottom: 54px;
+	position: relative;
+}
+
+#image3 {
+	float: left;
+	width: 270px;
+	height: 180px;
+	margin-bottom: 54px;
+	position: relative;
+}
+
+#image4 {
+	float: right;
+	width: 270px;
+	height: 180px;
+	margin-bottom: 54px;
+	position: relative;
+}
+
+#image5 {
+	float: left;
+	width: 270px;
+	height: 180px;
+	position: relative;
+}
+
+.captions {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	position: absolute;
+	bottom: 7px;
+	width: 270px;
+}
+
+/*CSS for contact.html*/
+
+form {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+input {
+	width: 581px;
+	padding: 5px;
+	margin: 5px 0 15px 0;
+}
+
+textarea {
+	width: 589px;
+	height: 200px;
+	margin: 5px 0 5px 0;
+	border-style: solid;
+	border-color: #cccccc;
+}
+
+button {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	border: none;
+	padding: 10px;
+	width: 100px;
+	margin-top: 15px;
+}
+
+
+
